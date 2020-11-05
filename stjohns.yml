@@ -1,0 +1,22 @@
+authorName: Massinissa HAMIDI
+experimentName: tehran_1
+trialConcurrency: 1
+# maxExecDuration: 1h
+# maxTrialNum: 10
+trainingServicePlatform: local  # choices: local, remote, pai
+searchSpacePath: stjohns.json
+useAnnotation: false
+tuner:
+    builtinTunerName: TPE   # choices: TPE, Random, Anneal, Evolution, BatchTuner, MetisTuner,
+                            #          GPTuner, SMAC (SMAC should be installed through nnictl)
+    classArgs:
+        optimize_mode: maximize  # choices: maximize, minimize
+assessor:
+    builtinAssessorName: Medianstop
+    classArgs:
+      optimize_mode: maximize
+      start_step: 7
+trial:
+  command: python stjohns.py -vv
+  codeDir: .
+  # gpuNum: 0
