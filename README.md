@@ -2,9 +2,9 @@
 
 Code accompanying the paper
 
-> [Hierarchical Learning of Dependent Concepts for Human Activity Recognition](/docs/296.pdf)
+> [Hierarchical Learning of Dependent Concepts for Human Activity Recognition](/doc/296.pdf)
 
-> [Supplementary material (containing the proof)](/docs/296_supplementary.pdf)
+> [Supplementary material (containing the proof)](/doc/296_supplementary.pdf)
 
 In multi-class classification tasks, like human activity recognition, it is often assumed that classes are separable. In real applications, this assumption becomes strong and generates inconsistencies. Besides, the most commonly used approach is to learn classes one-by-one against the others. This computational simplification principle introduces strong inductive biases on the learned theories. In fact, the natural connections among some classes, and not others, deserve to be taken into account. In this paper, we show that the organization of overlapping classes (multiple inheritances) into hierarchies considerably improves classification performances. This is particularly true in the case of activity recognition tasks featured in the Sussex-Huawei Locomotion (SHL) dataset.
 After theoretically showing the exponential complexity of possible class hierarchies, we propose an approach based on transfer affinity among the classes to determine an optimal hierarchy for the learning process.
